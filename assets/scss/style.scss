@@ -26,11 +26,14 @@ body {
 /* ----- BLOCKS ----- */
 @import "blocks/page.scss"; 
 @import "blocks/container.scss";
+@import "blocks/social.scss";
+@import "blocks/btn.scss";
 
 
 /* ----- header ----- */ 
 @import "header/header.scss";
 /* ----- SideBar ----- */ 
 @import "sidebar/sidebar.scss";
+@import "sidebar/profile.scss";
 /* ----- Main ----- */ 
 @import "main/main.scss";
