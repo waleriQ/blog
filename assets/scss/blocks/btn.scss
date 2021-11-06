@@ -1,3 +1,5 @@
+@import "mixin.scss";
+
 .btn {
   display: inline-block; //чтобы паддинги корректно работа
   vertical-align: top;
@@ -11,12 +13,12 @@
   text-decoration: none;
   padding: 1.1em 2.1em;
   border-radius: 3em;
+  transition: background-color .2s linear;
 }
+
 .btn--red {
-  background-color: $red;
-  box-shadow: 0 7px 17px -5px rgba($red, .2);
+  @include btn_transition ($red, $red, $red)
 }
 .btn--blue {
-  background-color: $blue;
-  box-shadow: 0 7px 17px -5px rgba($blue, .2);
+  @include btn_transition ($blue, $blue, $blue)
 }

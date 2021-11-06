@@ -1,0 +1,50 @@
+@import "blocks/mixin.scss";
+
+.nav_list {
+  display: flex;
+}
+/* Поднавигация */
+.nav_item {
+  position: relative;
+
+   &:hover{
+     
+     > .subnav {
+       display: block;
+     }
+     .nav_link {
+      background-color: $blue;
+     }
+   }
+}
+
+.nav_link {
+  padding: 1.4rem;
+  transition: background-color .2s linear;
+@include nav_links;
+&:hover {
+  background-color: $blue;
+}
+
+  &.has-subnav {
+  position: relative;
+  padding-right: 3.5rem; //отодвинули стрелочку вправо так как 
+  &:after {
+    margin-top: 1px; //чтобы стрелочка смотрелась по середине
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: $white_text transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 1.35rem;
+    transform: translateY(-50%); //выравнимаваем по вертикали
+  }
+}
+}
+
+.header_right {
+  display: flex;
+  justify-content: flex-end;
+}

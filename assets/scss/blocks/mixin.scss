@@ -1,0 +1,32 @@
+@mixin btn_transition ($background-color, $box_shadow, $background_darken) {
+  background-color: $background-color;
+  box-shadow: 0 7px 17px -5px rgba($box_shadow, .2);
+  &:hover {
+    background-color: darken($background_darken, 10%);
+  }
+  }
+
+   /*  Or we can to use 
+.btn--red {
+  background-color: $red;
+  box-shadow: 0 7px 17px -5px rgba($red, .2);
+  &:hover {
+    background-color: darken($red, 10%);
+  }
+}
+.btn--blue {
+  background-color: $blue;
+  box-shadow: 0 7px 17px -5px rgba($blue, .2);
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+}
+*/
+@mixin nav_links {
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
