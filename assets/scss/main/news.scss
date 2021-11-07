@@ -1,14 +1,14 @@
+@import "blocks/mixin.scss";
+/* ----- MIXIN ----- */
 .news {
   background-color: $black_bg;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .35);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, .35);
 padding: 2.5rem;
   margin-bottom: 3rem;
   border-radius: 5px;
   overflow: hidden;
 }
-.news__header {
-  margin: -2.5rem -2.5rem 2.5rem -2.5rem;
-}
+
 .news__header_pic {
   border-radius: 2px;
   display: block;
@@ -27,19 +27,53 @@ padding: 2.5rem;
   a {
     color: inherit;
     text-decoration: none;
-    color: $white_text;
+    
     transition: color .4s linear;
     &:hover {
       color: darken($white_text, 15%) ;
     }
   }
+  &--mb0 {
+    margin-bottom: 0;
+  }
 }
-
+/* ----- необходимо стилизовать все теги для CMS ---- */
 .news__text {
   font-size: 1.4rem;
-  color: #D2D2D2;
   line-height: 2.1rem;
+  border-bottom: 2px solid #1C1C1C;
+  padding-bottom: 2rem;
+  p {
+    margin-bottom: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+  h1, h2, h3, h4, h5 h6 {
+    font-weight: 700px;
+    margin-bottom: 2rem;   
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 2.3rem;
+  }
+  h5 {
+    font-size: 2.2rem;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+ 
 }
+/* ----- необходимо стилизовать все теги для CMS ---- */
 .news__footer {
   display: flex;
 justify-content: space-between;
@@ -58,6 +92,7 @@ align-items: center;
   }
   }
   .news__information-item {
+    margin-bottom: 3rem;
     &:not(:last-child):after {
       content: "";
       display: inline-block;
@@ -81,7 +116,38 @@ align-items: center;
 }
 /* NEWS_2 --video */
 .news__header {
-  &--video {
-    margin: 0 0 2.5rem 0;
+  margin: 0 0 2.5rem 0;
+  &--preview {   //модификатор для видео
+    margin: -2.5rem -2.5rem 2.5rem -2.5rem;
   }
+  &--open {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+/* -----create-site-page---- */
+.news_action {
+  opacity: 60%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: $white_text;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .5s linear;
+    transition: opacity .5s linear;
+    
+    &:hover {
+      color: darken($white_text, 10%);
+      opacity: 60%;
+    }
+  }
+}
+.news_action--icon {
+  margin-left: .5rem;
 }
