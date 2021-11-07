@@ -29,6 +29,8 @@ body {
 @import "blocks/social.scss";
 @import "blocks/btn.scss";
 @import "blocks/mixin.scss";
+@import "blocks/embed.scss";
+@import "blocks/pagination.scss";
 
 
 /* ----- header ----- */ 
@@ -43,3 +45,5 @@ body {
 @import "main/main.scss";
 @import "main/stories.scss";
 @import "main/add-post.scss";
+@import "main/news.scss";
+
