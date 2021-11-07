@@ -1,0 +1,28 @@
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+.form__control {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: white;
+  border-bottom: 1px solid #3F3F3F;
+  padding: .5rem 0;
+  &::placeholder {
+    color: rgba(white, .2);
+  }
+}
+.form__control--textarea {
+  height: 30px;
+  resize: none;
+  overflow: hidden;
+}
+.btn {
+  margin-top: 2rem;
+}

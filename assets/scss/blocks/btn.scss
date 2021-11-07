@@ -22,3 +22,6 @@
 .btn--blue {
   @include btn_transition ($blue, $blue, $blue)
 }
+.btn--rounded {
+  border-radius: 5px;
+}
