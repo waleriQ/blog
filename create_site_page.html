@@ -38,7 +38,7 @@ title: Post
   
   </div> <!-- news text (Новостной контент)-->
    <div class="related">
-     <h3 class="related__title  related__title--mb2">Интересно почитать</h3>
+     <h3 class="news__subtitle  related__title--mb2">Интересно почитать</h3>
      <ul class="related__list" >
        <li class="related__item">
          <h4 class="related__title">
@@ -68,15 +68,72 @@ title: Post
    </div> <!-- related-->
 
   
-   <div class="comments">
-     <h3 class="comments_title">Обсуждение</h3>
+     <h3 class="news_subtitle  news_subtitle-mt2">Обсуждение</h3>
      <form class="form" action="" method="post">
        <div class="form__group">
        <textarea class="form__control form__control--textarea" name="comments-text" placeholder="Текст комментария" ></textarea>
-       <button class="btn btn--blue btn--rounded">Отправить</button>
+       <button class="btn btn--blue btn--rounded  btn--sm">Отправить</button>
       </div>
-     </form>
-   </div>
+     </form> 
+ <ul class="comments">
+   <li class="comments__item">
+     <div class="comments__header">
+       <img class="comments__avatar" src="http://placehold.it/30" alt="">
+       <div class="comments__autor">Клименко Александр</div>
+       <time class="comments__pubdate" datetime="2020-10-17">1 неделю назад</time>
+     </div> <!--/ comments header -->
+
+     <div class="comments_text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi iste a aut quaerat, aperiam quia. Dicta quisquam voluptas quasi in laborum maxime? Porro eligendi harum ipsa, nostrum quam natus!
+     </div>
+     <button class="comments__reply" type="button">Ответить</button>
+     <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img class="comments__avatar" src="http://placehold.it/30" alt="">
+          <div class="comments__autor">Варкентин Александр</div>
+          <time class="comments__pubdate" datetime="2020-10-17">1 неделю назад</time>
+        </div> <!--/ comments header -->
+
+        <div class="comments_text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi iste a aut quaerat, aperiam quia. Dicta quisquam voluptas quasi in laborum maxime? Porro eligendi harum ipsa, nostrum quam natus!
+        </div>
+        <button class="comments__reply" type="button">Ответить</button>
+      </li>
+    </ul>
+    
+    </li>
+    <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img class="comments__avatar" src="http://placehold.it/30" alt="">
+          <div class="comments__autor">Балашов Владимир</div>
+          <time class="comments__pubdate" datetime="2020-10-17">1 неделю назад</time>
+        </div> <!--/ comments header -->
+
+        <div class="comments_text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi iste a aut quaerat, aperiam quia. Dicta quisquam voluptas quasi in laborum maxime? Porro eligendi harum ipsa, nostrum quam natus!
+        </div>
+        <button class="comments__reply" type="button">Ответить</button>
+        <ul class="comments">
+          <li class="comments__item">
+            <div class="comments__header">
+              <img class="comments__avatar" src="http://placehold.it/30" alt="">
+              <div class="comments__autor">Куликов Виталик </div>
+              <time class="comments__pubdate" datetime="2020-10-17">1 неделю назад</time>
+            </div> <!--/ comments header -->
+    
+            <div class="comments_text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi iste a aut quaerat, aperiam quia. Dicta quisquam voluptas quasi in laborum maxime? Porro eligendi harum ipsa, nostrum quam natus!
+            </div>
+            <button class="comments__reply" type="button">Ответить</button>
+          </li>
+        </ul>
+      </li>
+      
+    </ul>
+
+ </ul>
 
   </div> <!-- post content-->
 
