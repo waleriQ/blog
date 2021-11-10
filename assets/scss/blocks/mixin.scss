@@ -30,3 +30,9 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+
+@mixin breakpoint ($br) {
+  @media (max-width: $br) {
+@content;
+  }
+}

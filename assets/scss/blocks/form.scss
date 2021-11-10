@@ -1,3 +1,9 @@
+.form {
+  &--center {
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+}
 
 .form__group {
   margin-bottom: 1.5rem;
@@ -29,4 +35,26 @@
 }
 .btn {
   margin-top: 1.3rem;
+}
+.form__footer {
+  width: 100%;
+  &--center {
+    text-align: center;
+  }
+}
+.form__footer__list {
+  display: flex;
+  justify-content: center;
+}
+.form__footer__item {
+  margin: 0 .5rem;
+  a {
+    text-decoration: none;
+    color: white;
+    transition: color .5s ease-out ;
+    font-size: 1.2rem;
+  }
+  :hover {
+color: darken(white, 20%);
+  }
 }

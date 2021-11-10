@@ -7,6 +7,9 @@ $blue: #3137C9;
 $black: #0000;
 /* ----- Z-INDEX ----- */
 $z-index-sidebar: 100;
+$z-index-modal: 1010;
 
 /* ----- SIZE ----- */
 $sidebar-width: 300px;
+/* ----- MIXIN ----- */
+$tablet-bp: 991px;

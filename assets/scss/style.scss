@@ -7,6 +7,9 @@ html {
     font-size: 62.5%; //10px от 1.4rem
 }
 body {
+    &.no-scroll {
+        overflow: hidden;
+    }
     background-color: $black_bg;
     font-size: 1.4rem;
     color: white;
@@ -53,3 +56,6 @@ body {
 @import "main/add-post.scss";
 @import "main/news.scss";
 
+/* ----- Modal ----- */  
+@import "modal/modal.scss";
+@import "modal/video-modal.scss";

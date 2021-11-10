@@ -1,9 +1,16 @@
 .page {
+  flex-direction: column;
+  min-height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .page__title {
   font-size: 2.1rem;
   color: white;
   line-height: 2.1rem;
   text-decoration: none;
+  &--center {
+    text-align: center;
+  }
 }
