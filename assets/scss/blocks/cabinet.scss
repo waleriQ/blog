@@ -1,0 +1,41 @@
+.cabinet__global {
+  padding-top: 3rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 2rem;
+}
+.cabinet {
+  display: flex;
+
+}
+.form__control {
+  width: 340px;
+  
+}
+.cabinet__avatar {
+  flex-grow: 1;
+  margin-bottom: 3rem;
+  padding-left: 11rem;
+  img {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+.cabinet__file {
+ margin-top: 3rem;
+ color: #107EFF;
+ font-size: 1.4rem;
+ transition: color .2s linear;
+  input {
+    display: none;
+    
+    
+    
+  }
+  &:hover {
+    color: darken(#107EFF, 10%);
+    cursor: pointer;
+  }
+}

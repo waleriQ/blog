@@ -1,6 +1,9 @@
 
 .form__group {
   margin-bottom: 1.5rem;
+  &--md {
+    margin-bottom: 1.5rem;
+  }
 }
 .form__control {
   display: block;
@@ -13,7 +16,7 @@
   font-size: 1.4rem;
   color: white;
   border-bottom: 1px solid #3F3F3F;
-  padding: .5rem 0;
+  padding: .5rem 0 .75rem;
   &::placeholder {
     color: rgba(white, .2);
   }
