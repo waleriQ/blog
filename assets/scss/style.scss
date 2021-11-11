@@ -1,3 +1,5 @@
+@import "blocks/mixin.scss";
+
 /* ----- IMPORTS ----- */
 @import "_vars.scss";
 @import "vendor/reset.scss";
@@ -7,9 +9,10 @@ html {
     font-size: 62.5%; //10px от 1.4rem
 }
 body {
-    &.no-scroll {
+    @include breakpoint($tablet-bp) {
         overflow: hidden;
     }
+ 
     background-color: $black_bg;
     font-size: 1.4rem;
     color: white;
@@ -19,6 +22,10 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol","Noto Color Emoji";
 
+    &.no-scroll,
+    &.show-sidebat {
+        overflow: hidden;
+    }
     *,
     *:after,
     *:before {
@@ -40,6 +47,7 @@ body {
 @import "blocks/works.scss";
 @import "blocks/tags.scss";
 @import "blocks/cabinet.scss";
+@import "blocks/burger.scss";
 
 
 /* ----- header ----- */ 

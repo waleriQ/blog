@@ -31,8 +31,8 @@
   text-decoration: none;
 }
 
-@mixin breakpoint ($br) {
-  @media (max-width: $br) {
+@mixin breakpoint ($bp) {
+  @media screen and (max-width: $bp) {
 @content;
   }
 }

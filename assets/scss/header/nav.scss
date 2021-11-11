@@ -1,12 +1,36 @@
 @import "blocks/mixin.scss";
 
+.nav {
+  @include breakpoint ($tablet-bp){
+display: none;
+  }
+
+  &--mobile {
+  @include breakpoint ($tablet-bp){
+    display: block;
+   
+}
+}
+}
 .nav_list {
   display: flex;
-}
+  @include breakpoint ($tablet-bp){
+    display: none;
+      }
+      &--mobile {
+        display: none;
+        @include breakpoint ($tablet-bp){
+          display: block;
+        
+        }
+
+      }
+      }
 /* Поднавигация */
 .nav_item {
   position: relative;
 
+  
    &:hover{
      
      > .subnav {
@@ -16,15 +40,22 @@
       background-color: $blue;
      }
    }
+ 
+   
 }
 
 .nav_link {
   padding: 1.4rem;
   transition: background-color .2s linear;
+  
 @include nav_links;
 &:hover {
   background-color: $blue;
 }
+@include breakpoint ($tablet-bp){
+font-size: 1.6rem;
+     }
+
 
   &.has-subnav {
   position: relative;
@@ -42,6 +73,10 @@
     transform: translateY(-50%); //выравнимаваем по вертикали
   }
 }
+@include breakpoint ($tablet-bp){
+ padding-left: .5rem;
+ padding-right: 0;
+    }
 }
 
 .header_right {
