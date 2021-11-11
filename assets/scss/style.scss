@@ -10,7 +10,7 @@ html {
 }
 body {
     @include breakpoint($tablet-bp) {
-        overflow: hidden;
+        overflow: auto;
     }
  
     background-color: $black_bg;

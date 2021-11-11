@@ -4,6 +4,7 @@
   box-shadow: 0 15px 25px rgba($black, .45);
   background-color: #121212;
   border-radius: 5px;
+
 }
 
 .add-post__form {
@@ -34,7 +35,10 @@
   justify-content: space-around;
   width: 20%;
   flex-shrink: 0;
-  width: 100px;
+  width: 10rem;
+  @include breakpoint($mobile-bp) {
+    width: 8.5rem;
+}
 }
 .add-post-file,
 .add-post-send {

@@ -4,6 +4,12 @@
   grid-template-rows: 195px ;
   grid-column-gap: 13px;
   margin-bottom: 3rem;
+  @include breakpoint($mobile-bp) {
+    grid-template-columns: repeat(4, 14rem);
+    overflow: auto;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
 }
 .stories_item {
   border-radius: 5px;
@@ -18,9 +24,6 @@
     width: 100%;
     height: 100%;
     
-
-
-  
     background-image: linear-gradient(
     to bottom, 
     rgba($black, .8),

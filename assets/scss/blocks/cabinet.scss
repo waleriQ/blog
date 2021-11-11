@@ -1,15 +1,32 @@
+
 .cabinet__global {
   padding-top: 3rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding-bottom: 2rem;
+
 }
 .cabinet {
   display: flex;
+  @include breakpoint($tablet-bp) {
+flex-direction: column-reverse;
+text-align: center;
+align-items: center;
+width: 100%;
+padding: 0 1rem;
+}
 
+.cabinet__form {
+  @include breakpoint($tablet-bp) {
+    width: 100%;
+    }
+}
 }
 .form__control {
   width: 340px;
+  @include breakpoint($tablet-bp) {
+    width: 100%;
+    }
   
 }
 .cabinet__avatar {
@@ -20,7 +37,9 @@
     display: block;
     margin-bottom: 1.5rem;
   }
-
+  @include breakpoint($tablet-bp) {
+    padding: 0;
+    }
 }
 .cabinet__file {
  margin-top: 3rem;

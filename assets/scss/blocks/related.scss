@@ -9,6 +9,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  @include breakpoint($mobile-bp) {
+    text-overflow: clip ;
+    overflow: hidden;
+    white-space: normal;
+}
   &.related__title--mb2{
     margin-bottom: 2rem;
   }
@@ -21,11 +26,18 @@
 .related__list {
   display: flex;
   flex-wrap: wrap;
+  @include breakpoint($mobile-bp) {
+    display: block;
+
+}
+
 }
 .related__item {
   margin-bottom: 2.5rem;
   width: 50%;
-  
+  @include breakpoint($mobile-bp) {
+    width: 100%;
+  }
 }
 .related__title {
   font-size: 1.4rem;

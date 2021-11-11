@@ -1,13 +1,13 @@
-.page__title {
-  margin-bottom: 3rem;
- 
-}
+
 .work {
   margin-bottom: 3rem;
   display: flex;
 background-color: $black_bg;
 box-shadow: 0 0px 10px rgba(black, .35);
 border-radius: 5px;
+@include breakpoint($mobile-bp) {
+  flex-direction: column;
+}
 
 }
 .work__content {
@@ -15,7 +15,7 @@ border-radius: 5px;
   max-width: 290px;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
- 
+
 }
 .work__title {
   margin-top: 3rem;
@@ -29,12 +29,16 @@ a {
 }
 }
 .work__preview {
- max-width: 310px;
+ 
  img {
    width: 100%;
    height: 100%;
    object-fit: cover;
  }
+ @include breakpoint($mobile-bp) {
+  width: 100%;
+  height: 34rem;
+}
 }
 .work__description {
   font-weight: 300;
@@ -48,5 +52,10 @@ color: $white_text;
 }
 
 .work__link {
+  @include breakpoint($mobile-bp) {
+    margin-top: 3rem;
+  }
+  display: flex;
  margin-top: 9rem;
+
 }

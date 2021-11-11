@@ -7,6 +7,9 @@ padding: 2.5rem;
   margin-bottom: 3rem;
   border-radius: 5px;
   overflow: hidden;
+  @include breakpoint($tablet-bp) {
+    padding: 1.5rem;
+    }
 }
 
 .news__header_pic {
@@ -79,6 +82,10 @@ padding: 2.5rem;
   display: flex;
 justify-content: space-between;
 align-items: center;
+@include breakpoint($tablet-bp) {
+  flex-direction: column;
+  align-items: flex-start;
+  }
 }
 .news__information{
   display: flex;

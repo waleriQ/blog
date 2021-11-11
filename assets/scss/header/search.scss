@@ -16,4 +16,9 @@
   &::placeholder {
     color: rgba($white_text, .4);
   }
+  @include breakpoint($tablet-bp) {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+}
 }
