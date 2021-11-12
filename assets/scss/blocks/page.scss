@@ -1,4 +1,4 @@
-@import "blocks/mixin.scss";
+
 .page {
   flex-direction: column;
   min-height: 100vh;
@@ -7,9 +7,9 @@
   justify-content: center;
 
   @include breakpoint($tablet-bp) {
-
     .show-sidebar & {
     position: relative;
+ 
     &:after {
       content: "";
       display: block;
@@ -21,6 +21,7 @@
       top: 0;
       left: 0;
       z-index: 99;
+      
     }
   }
 }

@@ -1,5 +1,6 @@
 .modal {
-  display: flex;
+  // display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -11,6 +12,9 @@
   top: 0;
   z-index: $z-index-modal;
  padding: 1rem; 
+ &.show {
+   display: flex; 
+ }
 }
 .modal__content {
   max-width: 500px;
@@ -21,6 +25,10 @@
   position: relative;
   &--pd4 {
     padding: 8rem 1.3rem;
+  }
+  &--story {
+    padding: 0;
+    background: none;
   }
 }
 .modal__close {
@@ -59,4 +67,8 @@ opacity: 0.5;
       color: white;
     }
   };
+}
+.modal__video {
+  display: block;
+  margin: 0 auto;
 }
